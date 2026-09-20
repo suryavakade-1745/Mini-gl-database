@@ -1,0 +1,22 @@
+account_id,account_name,account_type
+1000,Cash,Asset
+1010,Bank Account,Asset
+1020,Accounts Receivable,Asset
+1030,Inventory,Asset
+1040,Prepaid Expenses,Asset
+1050,Office Equipment,Asset
+2000,Accounts Payable,Liability
+2010,TDS Payable,Liability
+2020,GST Payable,Liability
+2030,Salaries Payable,Liability
+3000,Capital,Equity
+3010,Retained Earnings,Equity
+4000,Sales Revenue,Revenue
+4010,Service Revenue,Revenue
+5000,Rent Expense,Expense
+5010,Salaries Expense,Expense
+5020,Utilities Expense,Expense
+5030,Office Supplies Expense,Expense
+5040,Travel Expense,Expense
+5050,Professional Fees Expense,Expense
+5060,Freight Expense,Expense

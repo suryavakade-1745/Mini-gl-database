@@ -1,9 +1,8 @@
-# Mini General Ledger Database
+# Mini General Ledger Dashboard
 
-A relational General Ledger database built on PostgreSQL, 
-modelled on SAP FI document structure. Designed to practice 
-SQL for finance — covering trial balance, vendor analysis, 
-and period-wise reporting.
+A relational General Ledger database built on PostgreSQL, modelled on SAP FI 
+document structure. Includes a Power BI dashboard with 8 visuals connected 
+live to PostgreSQL.
 
 ## SAP Table Mapping
 | This Project       | SAP Equivalent                  |
@@ -16,7 +15,7 @@ and period-wise reporting.
 ## What's Inside
 - `schema.sql` — table structure (3 tables)
 - `load_data.sql` — all data as INSERT statements (40 documents, 80 lines)
-- `Queries.sql` — 14 queries covering Week 1–3 topics
+- `Queries.sql` — 14 queries covering Weeks 1–5 topics
 - `chart_of_accounts.csv`, `vendor_master.csv`, `journal_entries.csv` — raw data
 - `mini_gl_dashboard.pbix` — Power BI dashboard with 8 visuals connected live to PostgreSQL
 
@@ -29,12 +28,33 @@ and period-wise reporting.
 - Monthly expense totals
 - Vendor spend ranking
 - Vendors with no transactions (LEFT JOIN)
+- Vendor outstanding balances (CTE)
+- Account balance classification (CASE WHEN)
+- Running bank balance (Window function)
+- Vendor rank by billing (Window function)
+- Month-over-month revenue change (LAG)
+
+## Power BI Dashboard
+8 visuals built on live PostgreSQL connection:
+- Trial Balance table
+- Debit Total by Account (column chart)
+- Spend by Account Type (donut chart)
+- Vendor Spend Treemap
+- Total Credit by Vendor (bar chart)
+- Total Debit & Credit (KPI cards)
+- Debit vs Credit Balance (gauge)
+- Debit Breakdown by Account Type (waterfall)
+
+![Dashboard](powerbi_dashboard.png)
 
 ## Tools Used
 - PostgreSQL 18
 - pgAdmin 4
+- Power BI Desktop (September 2026)
 
 ## How to Run
 1. Run `schema.sql` in pgAdmin to create tables
 2. Run `load_data.sql` to load all data
 3. Run any query from `Queries.sql`
+4. Open `mini_gl_dashboard.pbix` in Power BI Desktop
+5. Update PostgreSQL credentials if prompted (localhost, mini_gl_project)

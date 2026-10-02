@@ -18,6 +18,7 @@ and period-wise reporting.
 - `load_data.sql` — all data as INSERT statements (40 documents, 80 lines)
 - `Queries.sql` — 14 queries covering Week 1–3 topics
 - `chart_of_accounts.csv`, `vendor_master.csv`, `journal_entries.csv` — raw data
+- `mini_gl_dashboard.pbix` — Power BI dashboard with 8 visuals connected live to PostgreSQL
 
 ## Queries Covered
 - Expense account listing

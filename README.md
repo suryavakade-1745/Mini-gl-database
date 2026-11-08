@@ -13,7 +13,7 @@ live to PostgreSQL.
 | document_no        | BELNR (document number)         |
 
 ## What's Inside
-- `schema.sql` — table structure (3 tables)
+- `scheme.sql` — table structure (3 tables)
 - `load_data.sql` — all data as INSERT statements (40 documents, 80 lines)
 - `Queries.sql` — 14 queries covering Weeks 1–5 topics
 - `chart_of_accounts.csv`, `vendor_master.csv`, `journal_entries.csv` — raw data

@@ -17,7 +17,7 @@ live to PostgreSQL.
 - `load_data.sql` — all data as INSERT statements (40 documents, 80 lines)
 - `Queries.sql` — 14 queries covering Weeks 1–5 topics
 - `chart_of_accounts.csv`, `vendor_master.csv`, `journal_entries.csv` — raw data
-- `mini_gl_dashboard.pbix` — Power BI dashboard with 8 visuals connected live to PostgreSQL
+- `powerbi_dashboard.png` — screenshot of the Power BI dashboard (8 visuals, connected live to PostgreSQL)
 
 ## Queries Covered
 - Expense account listing
@@ -53,8 +53,7 @@ live to PostgreSQL.
 - Power BI Desktop (September 2026)
 
 ## How to Run
-1. Run `schema.sql` in pgAdmin to create tables
+1. Run `scheme.sql` in pgAdmin to create tables
 2. Run `load_data.sql` to load all data
 3. Run any query from `Queries.sql`
-4. Open `mini_gl_dashboard.pbix` in Power BI Desktop
-5. Update PostgreSQL credentials if prompted (localhost, mini_gl_project)
+4. (Optional) Connect Power BI Desktop to the `mini_gl_project` database on localhost to rebuild the dashboard
